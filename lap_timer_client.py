@@ -22,6 +22,6 @@ def main():
 
     print(lap_timer.longest_decreasing_streak(timer))
 
+
 if __name__ == "__main__":
     main()
-
