@@ -5,7 +5,6 @@
 import lap_timer
 
 def main():
-  def main():
     nombre = input()
 
     archivo = open(nombre, "r")
@@ -25,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
