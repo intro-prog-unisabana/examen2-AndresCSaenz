@@ -5,11 +5,15 @@
 import lap_timer
 
 def main():
-    nombre = input("Nombre del archivo: ")
-
-    timer = lap_timer.init(n)
+  def main():
+    nombre = input()
 
     archivo = open(nombre, "r")
+
+    linea = archivo.readline()
+    n = int(linea.strip())
+
+    timer = lap_timer.init(n)
 
     for linea in archivo:
         tiempo = float(linea.strip())
@@ -18,8 +22,6 @@ def main():
     archivo.close()
 
     print(lap_timer.longest_decreasing_streak(timer))
-
-
 
 if __name__ == "__main__":
     main()
