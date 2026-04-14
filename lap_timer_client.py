@@ -5,7 +5,7 @@
 import lap_timer
 
 def main():
-    nombre = input()
+    nombre = input("")  
 
     archivo = open(nombre, "r")
 
@@ -20,7 +20,8 @@ def main():
 
     archivo.close()
 
-    print(lap_timer.longest_decreasing_streak(timer))
+    resultado = lap_timer.longest_decreasing_streak(timer)
+    print(resultado)
 
 
 if __name__ == "__main__":
